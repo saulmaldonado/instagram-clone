@@ -1,14 +1,12 @@
 var slideIndex = 0
-
-console.log(document)
+var slide = document.getElementsByClassName("iphone-image")
 
 setInterval(function(){
-    var slide = document.getElementsByClassName("iphone-image")
-    for (let i = 0; i < slide.length; i++){
-        slide[i].style.opacity = 0
-    }
     if(slideIndex > slide.length - 1){
         slideIndex = 0
+    }
+    for (let i = 0; i < slide.length; i++){
+        slide[i].style.opacity = 0
     }
     slide[slideIndex].style.opacity = 1
     slideIndex++

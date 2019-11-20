@@ -6,6 +6,12 @@ body{
     align-items: center;
 }
 
+a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: grey;
+}
 img {
     max-width: 100%;
     max-height: 100%;
@@ -30,12 +36,12 @@ img {
 }
 
 #login-container{
-    height: 779px;
+    height: 809px;
     width: 350px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -51,37 +57,42 @@ img {
     transition: opacity 1s;
 }
 #box1{
-    height: 380px;
+    height: 564px;
     width: 348px;
     border: 1px solid lightgray;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
     margin-bottom: -120px;
     background: white;
 }
 
-
+#textbox{
+    height: 40px;
+    width: 268px;
+    color: rgb(161, 161, 161);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
 
 #login{
     width: 348px;
-    height: 263px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-
 }
 
 .inputfield{
     width: 268px;
     height: 38px;
     padding: 5px;
-
     background-color: rgb(247, 247, 247);
     opacity: 60%;
     font-size: 12px;
@@ -96,7 +107,7 @@ img {
     top: -10px;
 }
 
-#login-button{
+.button{
     width: 268px;
     height: 30px;
     background-color: rgba(0, 110, 255, 0.966);
@@ -104,10 +115,7 @@ img {
     font-weight: 600;
     border: rgb(231, 231, 231) 1px solid;
     border-radius: 5px;
-    opacity: .25;
-
-    position: relative;
-    top: -12px;
+    opacity: 1;
 
 }
 
@@ -143,11 +151,14 @@ img {
 
 }
 
-#facebook{
-    width: 268px;
-    height: 20px;
-
-    display: flex;
+#terms{
+    width: 228px;
+    height: 54px;
+    color: rgb(139, 139, 139);
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    box-sizing: border-box;
     justify-content: center;
 }
 
@@ -156,16 +167,6 @@ img {
     font-size: 13px;
     font-weight: 600;
     margin-left: 10px;
-}
-
-#forgot-password{
-    height: 14px;
-    widows: 348px;
-    text-decoration: none;
-    font-size: 12px;
-    text-align: center;
-    position: relative;
-    bottom: -5px;
 }
 
 #box2{
@@ -178,12 +179,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: -30px;
     background: white;
-    font-size: 13px;
+    margin-top: 125px;
+    font-size: 15px;
 }
 
-#sign-up{
+#log-in{
     margin-left: -75px;
     color: rgb(85, 182, 214);
     font-weight: bold;
